@@ -28,7 +28,7 @@ After loading the corresponding dataset from your local drive:
 2- Run lines 130-158 for Classification Error Impurity (CEI) function
 
 
-Repeat steps 3 and 4 for CEI, MI, and FR. Then, concatenate the corresponding lists of sorted features using **features = np.unique(np.concatenate((top_CEI, top_FR, top_MI)))**. For MI and FR, ensure you use **alpha.argsort()** instead of **alpha.argsort()[::-1]**. Alternatively, you can select the corresponding **features.npy** file for each dataset directly from the 'Top 50 features...' folder, eliminating the need to repeat steps 3 and 4.
+Repeat steps 3 and 4 for CEI, MI, and FR. Then, concatenate the corresponding lists of sorted features using **features = np.unique(np.concatenate((top_CEI, top_FR, top_MI)))**. For MI and FR, ensure you use **alpha.argsort()** instead of **alpha.argsort()[::-1]**. Alternatively, you can select the corresponding **features.npy** file for each dataset directly from the 'The top 50 features...' folder, eliminating the need to repeat steps 3 and 4. Later in Step 7, you can create the search space of AGAwER using this **features.npy**.
 
      3- Run lines 163-175 to calculate the alpha.npy which assigns a weight to each feature based on CEI
 
@@ -38,6 +38,12 @@ Repeat steps 3 and 4 for CEI, MI, and FR. Then, concatenate the corresponding li
 
 6- Run lines 268-509 for the corresponding functions of AGAwER
 
+7- Run line 513 and create the search space of AGAwER using the corresponding **features.npy**
+
+8- Run lines 522-925 for the main body of AGAwER
+
+After line 928, you will find code that calculates the average prediction accuracy using existing filters in the paper, such as SHAP, Random Forest, ReliefF, etc., based on the top N features (where N = 10, 20, 30, 40, 50). Additionally, the code includes functionality for generating illustrations and figures for the paper.
+
 Cite this article
 
-Hossein Nematzadeh, José García-Nieto, José F. Aldana-Montes, Ismael Navas-Delgado. Pattern recognition frequency-based feature selection with multi-objective discrete evolution strategy for high-dimensional medical datasets. Expert Systems with Applications, Volume 249, Part A, 2024, 123521, ISSN 0957-4174. https://doi.org/10.1016/j.eswa.2024.123521.
+
