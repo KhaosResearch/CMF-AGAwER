@@ -23,13 +23,20 @@ Classification Error Impurity (CEI) is a frequency-based filter ranking method, 
 
 After loading the corresponding dataset from your local drive:
 
-1- Run lines 55-71 to calculate the summation of samples per label
+1- Run lines 63-79 to calculate the summation of samples per label
 
-2- Run lines 73-93 for Maximum Pattern Recognition (MPR)
+2- Run lines 130-158 for Classification Error Impurity (CEI) function
 
-3- Run lines 96-110 to create a dataset with top 20 features of MPR
 
-4- Run lines 115-409 for Multi-objective Discrete Evolution Strategy and its corresponding functions
+Repeat steps 3 and 4 for CEI, MI, and FR. Then, concatenate the corresponding lists of sorted features using **features = np.unique(np.concatenate((top_CEI, top_FR, top_MI)))**. For MI and FR, ensure you use **alpha.argsort()** instead of **alpha.argsort()[::-1]**. Alternatively, you can select the corresponding **features.npy** file for each dataset directly from the 'Top 50 features...' folder, eliminating the need to repeat steps 3 and 4.
+
+     3- Run lines 163-175 to calculate the alpha.npy which assigns a weight to each feature based on CEI
+
+     4- Run lines 182-185 for sorting the features of the dataset based on the corresponding alpha
+
+5- Run lines 200-228 for metrics evaluation using 5-fold stratified cross validation before applying CMF-AGAwER
+
+6- Run lines 268-509 for the corresponding functions of AGAwER
 
 Cite this article
 
