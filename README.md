@@ -15,7 +15,7 @@ Classification Error Impurity (CEI) is a frequency-based filter ranking method, 
 
 5- [Maximum Pattern Recognition (MPR)](https://www.sciencedirect.com/science/article/pii/S0957417424003865). Publication year: 2024
 
-6- Distance-based Mutual Congestion (DMC). Publication year: Under Review
+6- [Distance-based Mutual Congestion (DMC)](https://arxiv.org/abs/2407.15611). Publication year: 2024 (in preprint)
 
 7- Classification Error Impurity (CEI). Publication year: Under Review
 
