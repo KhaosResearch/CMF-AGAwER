@@ -47,7 +47,7 @@ After line 928, you will find code that calculates the average prediction accura
 
 Cite this article
 
-Hossein Nematzadeh, José García-Nieto, Ismael Navas-Delgado, José F. Aldana-Montes, Feature selection using a classification error impurity algorithm and an adaptive genetic algorithm improved with an external repository, Knowledge-Based Systems, Volume 301, 2024, 112345,
+Hossein Nematzadeh, José García-Nieto, Ismael Navas-Delgado, José F. Aldana-Montes, Feature selection using a classification error impurity algorithm and an adaptive genetic algorithm improved with an external repository, Knowledge-Based Systems, Volume 301, 2024, 112345.
 https://doi.org/10.1016/j.knosys.2024.112345.
 
 
