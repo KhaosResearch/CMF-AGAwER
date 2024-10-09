@@ -1128,7 +1128,7 @@ for i in range(5):
     for i in range(100):
       X_train, X_test, y_train, y_test = train_test_split(Xn,y, stratify=y, test_size=0.2)
 
-      dectree = tree.DecisionTreeClassifier()
+      dectree = tree.DecisionTreeClassifier(random_state=42)
       dectree.fit(X_train,y_train)
       s[i]=dectree.score(X_test,y_test)
       
@@ -1185,7 +1185,7 @@ for i in range(5):
   for i in range(100):
     X_train, X_test, y_train, y_test = train_test_split(X_relief[:,0:limit], y, stratify=y, test_size=0.2)
 
-    dectree = tree.DecisionTreeClassifier()
+    dectree = tree.DecisionTreeClassifier(random_state=42)
     dectree.fit(X_train, y_train)
     s[i] = dectree.score(X_test, y_test)
   limit=limit+10
